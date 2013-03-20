@@ -20,7 +20,6 @@ def main(window):
   # we know that the first argument from curses.wrapper() is stdscr.
   # Initialize it globally for convenience.
   curses.nl()
-  logging.info("woohoo")
   curses.noecho()
   
   window.timeout(0)
