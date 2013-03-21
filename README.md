@@ -1,7 +1,7 @@
 dragon curve exercise
 =====================
 This project contains a starter script for 
-writing a dragon curve fractal (see http://en.wikipedia.org/wiki/Dragon_curve)
+writing a dragon curve fractal (see http://en.wikipedia.org/wiki/Dragon_curve and http://mathworld.wolfram.com/DragonCurve.html)
 with the curses api (see http://docs.python.org/2/library/curses.html) 
 in python.
 
