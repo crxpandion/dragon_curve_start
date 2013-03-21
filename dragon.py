@@ -41,11 +41,12 @@ Directions = enum(EAST=0, NORTH=1, WEST=2, SOUTH=3)
 Turns = enum(LEFT="0", RIGHT="1")
 
 class Point(namedtuple("Point", "row column char")):
-  """Simple namedtuple class to make points more explicit"""
+  """Simple namedtuple class to make points (pixel) more explicit
+  """
   __slots__ = ()
   
   def next_point(self, direction, current_direction):
-    """Produces a new point based off of the current direction
+    """Produces a new point based off of the current direction of this 'point'
     and new direction. This determines how the encoding of the curve will be rendered. 
     
     TODO Implement logic to dictate how the characters "_" and "|" will be drawn to the screen.
@@ -72,12 +73,13 @@ class Point(namedtuple("Point", "row column char")):
 
 def create_pattern():
   """TODO extend to generate the pattern dynamically
+  This illustrates the fist 31 entries in the pattern.
   """
   return "1101100111001001110110001100100"
 
 def get_new_direction(old_direction, turn):
   """TODO Fix to correctly determine direction
-  Currently this just rotates around-and-around
+  Currently this just draws a straight line 
   """
   return old_direction
 
